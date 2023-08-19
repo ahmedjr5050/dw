@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../utils/ServicesItem.dart';
+import 'PagePdf.dart';
 
 class Filteration extends StatelessWidget {
   const Filteration({super.key});
@@ -9,8 +10,9 @@ class Filteration extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.yellow[100],
       appBar: AppBar(
-          backgroundColor: Color(0xffDAD0E1),
+          backgroundColor: Colors.grey[600],
           automaticallyImplyLeading: false,
           elevation: 0,
           title: Row(children: [
@@ -52,7 +54,7 @@ class Filteration extends StatelessWidget {
                 SingleChildScrollView(
                   child: GestureDetector(
                     onTap: () {
-                      Navigator.pushNamed(context, Filteration.id);
+                      Navigator.pushNamed(context, PageForPdf.id);
                     },
                     child: ServiceItem(
                       image:

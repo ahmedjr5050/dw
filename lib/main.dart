@@ -1,3 +1,4 @@
+import 'package:dw/Page/PagePdf.dart';
 import 'package:flutter/material.dart';
 import 'Page/HomePage.dart';
 import 'Page/SplashScreens.dart';
@@ -15,6 +16,7 @@ class BW extends StatelessWidget {
     return MaterialApp(
       initialRoute: SplashScreen.id,
       routes: {
+        PageForPdf.id: (context) => PageForPdf(),
         HomePage.id: (context) => HomePage(),
         SplashScreen.id: (context) => const SplashScreen(),
         Filteration.id: (context) => const Filteration(),
